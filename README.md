@@ -1,4 +1,4 @@
-# Packet
+# Ez-Packet
 A byte manipulation tool for IoT and network communications.
 
 This module aims to simplify writing protocols for I/O by allowing declarative byte parsing.
@@ -6,7 +6,7 @@ This module aims to simplify writing protocols for I/O by allowing declarative b
 ## Usage
 Since this module is not published yet it only works with relative import, so python console needs to run on the same level as this module's folder
 ```python
-from .packet import Packet, Section
+from ezpacket import Packet, Section
 
 packet = Packet([Section(0x1100),Section(value=0x11,byte_size=2)])
 packet.to_bytes() # 0x11000011
